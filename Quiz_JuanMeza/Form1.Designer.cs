@@ -82,7 +82,8 @@ namespace Quiz_JuanMeza
             "Servicios",
             "Juguetes",
             "Animales - Mascotas",
-            "Ropa - Accesorios"});
+            "Ropa - Accesorios",
+            "Comida"});
             this.comboBox1.Location = new System.Drawing.Point(77, 290);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(199, 21);

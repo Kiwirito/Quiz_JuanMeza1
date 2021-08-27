@@ -69,8 +69,15 @@ namespace Quiz_JuanMeza
                 {
                     boxer1 = boxer1 + " - " + Naci.Text;
                 }
-                rtxtResults.Text =  "\n" + "---------------------------------------------" + "\n" + box1.Text + "\n" + dateTimePicker1.Value + "\n" + comboBox1.SelectedItem + "\n" + listBox1.SelectedItem + "\n" + boxer1 + "\n" + "---------------------------------------------";
+                rtxtResults.Text = rtxtResults.Text + "\n" + "---------------------------------------------" + "\n" + box1.Text + "\n" + dateTimePicker1.Value + "\n" + comboBox1.SelectedItem + "\n" + listBox1.SelectedItem + "\n" + boxer1 + "\n" + "---------------------------------------------";
                 boxer1 = string.Empty;
+                box1.Clear();
+                comboBox1.Text = string.Empty;
+                listBox1.ClearSelected();
+                Depar.Checked = false;
+                Inter.Checked = false;
+                Regi.Checked = false;
+                Naci.Checked = false;
             }
 
 
