@@ -12,6 +12,8 @@ namespace Quiz_JuanMeza
 {
     public partial class Home : Form
     {
+        private string boxer1 = string.Empty;
+  
         public Home()
         {
             InitializeComponent();
@@ -39,6 +41,52 @@ namespace Quiz_JuanMeza
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(box1.Text))
+            {
+                MessageBox.Show("Primero debes poner un producto");
+            }
+            else
+            {
+               
+                if (Depar.Checked == true)
+                {
+                    boxer1 = boxer1 + " - " + Depar.Text;
+                }
+                if (Inter.Checked == true)
+                {
+                    boxer1 = boxer1 + " - " + Inter.Text;
+                }
+                if (Regi.Checked == true)
+                {
+                    boxer1 = boxer1 + " - " + Regi.Text;
+                }
+                if (Naci.Checked == true)
+                {
+                    boxer1 = boxer1 + " - " + Naci.Text;
+                }
+                rtxtResults.Text =  "\n" + "---------------------------------------------" + "\n" + box1.Text + "\n" + dateTimePicker1.Value + "\n" + comboBox1.SelectedItem + "\n" + listBox1.SelectedItem + "\n" + boxer1 + "\n" + "---------------------------------------------";
+                boxer1 = string.Empty;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
     }
