@@ -285,7 +285,7 @@ namespace Quiz_JuanMeza
             this.Controls.Add(this.Regi);
             this.Controls.Add(this.label1);
             this.Name = "Home";
-            this.Text = "Form1";
+            this.Text = "Home";
             this.ResumeLayout(false);
             this.PerformLayout();
 

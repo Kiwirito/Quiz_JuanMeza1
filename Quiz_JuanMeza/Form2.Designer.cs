@@ -63,7 +63,7 @@ namespace Quiz_JuanMeza
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richReporte);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Reporte";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
