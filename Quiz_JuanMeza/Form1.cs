@@ -96,5 +96,14 @@ namespace Quiz_JuanMeza
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (Form2 sf = new Form2())
+            {
+                sf.InfoReporte = rtxtResults.Text;
+                sf.ShowDialog();
+            }
+        }
     }
 }
